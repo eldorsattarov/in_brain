@@ -30,19 +30,32 @@ const HeaderKurs = (props) => {
                                         className="text-primary">1</span> из 14
                             </span> :
                                     (window.location.href.includes("/course_you") ?
-                                        <span className={`${openSearch == true ? "textt mr-5 d-none" : "textt mr-5"}`}>
+                                            <span
+                                                className={`${openSearch == true ? "textt mr-5 d-none" : "textt mr-5"}`}>
                                 Текущий урок: Приветствие
                             </span> :
-                                        (window.location.href.includes("/student_card") ?
-                                            <span className={`${openSearch == true ? "textt mr-5 d-none" : "textt mr-5"}`}>
+                                            (window.location.href.includes("/student_card") ?
+                                                    <span
+                                                        className={`${openSearch == true ? "textt mr-5 d-none" : "textt mr-5"}`}>
                             Каждый может научится новому ! Даже если страшно.
-                            </span> :
-                                            <span className={`${openSearch == true ? "textt mr-5 d-none" : "textt mr-5"}`}>
+                            </span> : (window.location.href.includes("/course_html1") ?
+                                                        <span
+                                                            className={`${openSearch == true ? "textt mr-5 d-none" : "textt mr-5"}`}>
+                            Каждый может научится новому ! Даже если страшно.
+                            </span> : (window.location.href.includes("/html1_check") ?
+                                                            <span
+                                                                className={`${openSearch == true ? "textt mr-5 d-none" : "textt mr-5"}`}>
+                            Текущий урок: Приветствие / Привет / 1 из 14
+                            </span> : <span className={`${openSearch == true ? "textt mr-5 d-none" : "textt mr-5"}`}>
                             Текущий урок: <span className="textt2">Привет посмотри видео</span>
-                            </span>)
+                            </span>
+                                                        )
+                                                    )
+                                            )
+                                    )
+                            )
 
-                            )
-                            )
+                            // Текущий урок: Приветствие / Привет / 1 из 14
                             // <span className={`${openSearch == true ? "textt mr-5 d-none" : "textt mr-5"}`}>
                             // Текущий урок: <span className="textt2">Привет посмотри видео</span>
                             // </span>

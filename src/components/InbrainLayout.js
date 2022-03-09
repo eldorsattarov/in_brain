@@ -94,12 +94,14 @@ const InbrainLayout = (props) => {
                                             <Typography className="actitle p-0 m-0">
                                                 <div className="d-flex align-items-center avatarDiv">
                                                     <p className="m-0">HTML</p>
+
                                                 </div>
                                             </Typography>
                                         </AccordionSummary>
                                         <AccordionDetails>
                                             <Typography>
-                                    <Link to="/start" className="text-decoration-none">Html</Link>
+                                    <Link to="/start" className="text-decoration-none">Html</Link><br/>
+                                    <Link to="/course_html1" className="text-decoration-none">Базовые элементы HTML</Link>
                                             </Typography>
                                         </AccordionDetails>
                                     </Accordion>

@@ -17,7 +17,7 @@ body {
     font-family: Inter;
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 15px;
     //line-height: 27px;
     color: #000000;
     padding-right: 90px;
@@ -65,14 +65,17 @@ body {
       outline: none;
       border: 0;
     }
+    &:active{
 
+    }
+    &.active {
+      color: #FFCC00;
+    }
     &:hover {
       color: #1C84FF;
     }
 
-    &.active {
-      color: #FFCC00;
-    }
+
   }
 
   .accc {
@@ -143,7 +146,7 @@ body {
     font-family: Inter;
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 15px;
     //line-height: 27px;
     color: #000000;
     padding-right: 130px;
@@ -255,6 +258,7 @@ body {
 }
 
 .kursBoshlanishi {
+  //padding-bottom: 50px;
   h2 {
     font-family: Inter;
     font-style: normal;
@@ -313,11 +317,13 @@ body {
 
   .kursRow {
     margin-top: 40px;
+    margin-bottom: 20%;
     background-color: #F8F8FF;
     padding: 30px;
     border-radius: 20px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
+
     .cardd {
       border-radius: 55px;
       //box-shadow:7px 7px 0px 0px rgba(255, 204,0 , 0.6);
@@ -692,20 +698,482 @@ body {
     }
   }
 }
-.studentcard{
-  .studentcardrow{
+
+.studentcard {
+  .kartochka {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 30px;
+  }
+
+  .studentcardrow {
     background-color: #F8F8FF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
     padding: 30px;
+    padding-bottom: 150px;
 
+    .studentCard {
+      border: 0;
+      background: #FFFFFF;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+      border-radius: 30px;
+
+      .card-body {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 50px;
+
+        .cardLeft {
+          position: relative;
+
+          .imgone {
+            width: 155px;
+            height: 155px;
+          }
+
+          .cardLeftdiv {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+
+            img {
+              width: 55px;
+              height: 55px;
+            }
+
+            span {
+              position: absolute;
+              font-family: Inter;
+              font-style: normal;
+              font-weight: bold;
+              font-size: 15px;
+              color: #000000;
+            }
+          }
+        }
+
+        .cardRight {
+          padding-top: 10px;
+          box-sizing: border-box;
+
+          h4 {
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 21px;
+            color: #1C84FF;
+          }
+
+          p {
+            font-family: Inter;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+            color: #000000;
+            display: flex;
+            align-items: center;
+
+            span {
+              margin-left: 5px;
+              color: #989898;
+            }
+
+            .span {
+              color: #1C84FF;
+
+              img {
+                width: 18px;
+                height: 13px;
+                margin-left: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .studentCard2 {
+      width: 135px;
+      //width: 15%;
+      height: 150px;
+      margin-top: 10px;
+      //text-align: center;
+      border-radius: 30px;
+      border: 0;
+      //box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+      box-shadow: 7px 7px 0px 0px rgba(161, 201, 244, 0.6);
+      background: #71B2FF;
+
+      .card-body {
+        border-radius: 30px;
+        transform: translate(-7px, -7px);
+        background-color: white;
+      }
+
+      img {
+
+        width: 90px;
+        height: 90px;
+      }
+
+      span {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18px;
+        color: #1C84FF;
+      }
+    }
+
+    .col2text {
+      font-family: Inter;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 21px;
+      color: #1C84FF;
+    }
+
+    .coursetext {
+      font-family: Inter;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 21px;
+      color: black;
+      margin-top: 20px;
+      margin-bottom: 40px;
+
+      span {
+        color: #FFC900;
+      }
+    }
+
+
+    .courses {
+      &:hover {
+        .studentCardtext {
+          .coursetext {
+            color: #1C84FF;
+          }
+        }
+      }
+
+      .studentCard3 {
+        width: 135px;
+        //width: 15%;
+        height: 150px;
+        margin-top: 10px;
+        //text-align: center;
+        border-radius: 30px;
+        border: 0;
+        //box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+        box-shadow: 7px 7px 0px 0px rgba(161, 201, 244, 0.6);
+        background: #71B2FF;
+
+        .card-body {
+          border-radius: 30px;
+          transform: translate(-7px, -7px);
+          background-color: black;
+        }
+
+        img {
+          transform: scale(0.90);
+          //width: 70px;
+          //height: 70px;
+        }
+
+        span {
+          font-family: Inter;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          color: white;
+        }
+      }
+
+      .studentCardtext {
+        display: block;
+        align-items: center;
+        margin-left: 20px;
+
+        .coursetext {
+          font-family: Inter;
+          font-style: normal;
+          font-weight: 800;
+          font-size: 21px;
+          color: black;
+          margin: 0;
+        }
+
+        p {
+          font-family: Inter;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 17px;
+          max-width: 70%;
+          color: #000000;
+        }
+      }
+
+      .studentCardbuttons {
+        div {
+          button {
+            outline: none;
+            width: 187px;
+            box-shadow: none;
+          }
+        }
+
+        div:first-child {
+          margin-bottom: 5px;
+        }
+
+        .buttonlink1 {
+          text-decoration: none;
+          font-family: Inter;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          color: #FFFFFF;
+          border-radius: 14px;
+          padding: 12px 20px;
+          display: flex;
+          align-items: center;
+          background-color: black;
+
+          &:hover {
+            background-color: #1C84FF;
+          }
+
+          &:active {
+            background-color: #FFC900;
+          }
+
+          img {
+            width: 9px;
+            height: 15px;
+            margin-left: 8px;
+          }
+        }
+
+        .buttonlink2 {
+          text-decoration: none;
+          font-family: Inter;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          color: #FFFFFF;
+          border-radius: 14px;
+          padding: 12px 20px;
+          display: flex;
+          align-items: center;
+          background-color: black;
+
+          &:hover {
+            background-color: #1C84FF;
+          }
+
+          &:active {
+            background-color: #FFC900;
+          }
+
+          img {
+            width: 9px;
+            height: 15px;
+            margin-left: 8px;
+          }
+        }
+      }
+    }
+
+    .modall {
+      .modalPage {
+        .card {
+          .card-body {
+            h2 {
+              font-family: Inter;
+              font-style: normal;
+              font-weight: 600;
+              font-size: 20px;
+              color: #000000;
+
+              span {
+                color: #1C84FF;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.courseHtmlOne {
+  .stipper {
+    width: 86%;
+  }
+
+  .progres {
+    display: flex;
+    align-items: center;
+
+    h4 {
+      font-family: Inter;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      color: #000000;
+
+    }
+
+    .span1 {
+      font-family: Inter;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 23px;
+      color: #1C84FF;
+      margin-left: 5px;
+    }
+
+    .span2 {
+      font-family: Inter;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 23px;
+      color: black;
+      margin-left: 5px;
+    }
+  }
+
+  h2 {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    color: #000000;
+
+    span {
+      color: #1C84FF;
+    }
+  }
+
+  p {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #000000;
+    span{
+      color: red;
+    }
+  }
+
+  img {
+    transform: scale(0.70);
+  }
+
+  .downloadFile {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 6px 10px;
+    display: flex;
+    align-items: center;
+    background-color: black;
+
+    &:hover {
+      background-color: #1C84FF;
+    }
+
+    &:active {
+      background-color: #FFC900;
+    }
+
+    img {
+      transform: scale(0.80);
+      margin-left: 5px;
+    }
+  }
+
+  .videoRegistrOne {
+    overflow: hidden;
+    border-radius: 30px;
+  }
+
+  .cardknopka {
+    pointer-events: none;
+    background-color: #F8F9FC;
+    border: 0;
+    padding: 20px 0;
+    margin: 20px 0;
+
+    .cardknopkaLink {
+      background-color: #1C84FF;
+      text-decoration: none;
+      font-family: Inter;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 12px;
+
+      &:hover {
+        background-color: #1C84FF;
+      }
+
+      &:active {
+        background-color: #FFC900;
+      }
+    }
+  }
+.buttonLink{
+  //display: flex;
+  //align-items: center;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 12px;
+  background-color: black;
+  &:hover{
+    background-color: #1C84FF;
+  }
+  &:active{
+    background-color: #FFC900;
+  }
+}
+  .buttonLink:nth-child(1){
+    img{
+      margin-right: 8px;
+    }
+  }
+  .buttonLink:nth-child(2){
+    img{
+      margin-left: 8px;
+    }
   }
 }
 
 
 .footer {
-  padding: 40px 0px;
-
+  //padding: 40px 0px;
+  padding-top: 40px;
+  //padding-bottom: 20px;
   .footerLogo {
     width: 100px;
     transform: scale(1.3);

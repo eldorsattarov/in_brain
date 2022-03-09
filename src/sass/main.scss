@@ -139,9 +139,12 @@ body {
     background-color: #18191B;
 
     .avatarDiv {
+
       background-color: #18191B;
 
       .avatar {
+        margin-top: -3px;
+        margin-right: 10px!important;
         img {
           border-radius: 50%;
         }

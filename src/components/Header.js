@@ -1,8 +1,19 @@
 import React, {useState} from 'react';
 import {Link} from "react-router-dom";
 import InbrainLayout from "./InbrainLayout";
+import {getText, getLanguage} from "../locales";
+import {LANGUAGE} from "../tools/constants";
 
 const Header = (props) => {
+
+    const changeLanguage = (e) => {
+        console.log(e);
+        // localStorage.setItem(LANGUAGE, e.target.value);
+        localStorage.setItem(LANGUAGE, e);
+        document.location.reload(true);
+    }
+
+
     const [openSearch, setopensearch] = useState(false);
     const opensearch = () => {
         setopensearch(!openSearch);
@@ -19,7 +30,7 @@ const Header = (props) => {
                         {/*</Link>*/}
 
                         <span className={`${openSearch == true ? "textt mr-5 d-none" : "textt mr-5"}`}>
-                            Каждый может научится новому ! Даже если страшно.
+                            {getText("headerText")}
                             {/*{window.location.href.includes("/start") ? "Текущий урок: Привет посмотри видео" : "Каждый может научится новому ! Даже если страшно."}*/}
                         </span>
 
@@ -34,9 +45,9 @@ const Header = (props) => {
                         </div>
 
                         <div className="d-flex justify-content-between">
-                            <button type="button" className="btn active">RU</button>
-                            <button type="button" className="btn">UZ</button>
-                            <button type="button" className="btn">EN</button>
+                            <button type="button" className={`${getLanguage()==="ru" ? "btn active" : "btn"}`} onClick={()=>changeLanguage('ru')}>RU</button>
+                            <button type="button" className={`${getLanguage()==="uz" ? "btn active" : "btn"}`} onClick={()=>changeLanguage('uz')}>UZ</button>
+                            <button type="button" className={`${getLanguage()==="en" ? "btn active" : "btn"}`} onClick={()=>changeLanguage('en')}>EN</button>
                         </div>
 
 
